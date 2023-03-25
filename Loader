@@ -3,11 +3,11 @@ local MoonChicoryHubGamesList = {
 }
 
 for i,v in next, MoonChicoryHubGamesList do
-    cloudyHubGamesList[i] = table.concat(v:split(' '), '_')
+    MoonChicoryHubGamesList[i] = table.concat(v:split(' '), '_')
 end
 
 if MoonChicoryHubGamesList[game.PlaceId] ~= nil then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AliceZurburg/CloudyHub/main/Games/" ..game.PlaceId.. ".lua, true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/" ..game.PlaceId.. ".lua, true))()
 else
     return "Game not supported!"    
 end
