@@ -1,0 +1,5 @@
+if game.PlaceId == 2888719930 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/Roblox-Scripts/main/2888719930.lua"))()
+else
+  game.Players.Localplayer:kick()
+end
