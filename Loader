@@ -7,7 +7,7 @@ for i,v in next, MoonChicoryHubGamesList do
 end
 
 if MoonChicoryHubGamesList[game.PlaceId] ~= nil then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/" ..game.PlaceId.. ".lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/" ..game.PlaceId, true))()
 else
     return "Game not supported!"    
 end
