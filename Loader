@@ -1,13 +1,4 @@
-local MoonChicoryHubGamesList = {
-    [2888719930] = "Boxing Simulator 2",
-}
-
-for i,v in next, MoonChicoryHubGamesList do
-    MoonChicoryHubGamesList[i] = table.concat(v:split(' '), '_')
-end
-
-if MoonChicoryHubGamesList[game.PlaceId] ~= nil then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/" ..game.PlaceId, true))()
-else
-    return "Game not supported!"    
+local PlaceId = game.PlaceId
+if PlaceId = 2888719930 then --BS2
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/2888719930.lua"))()
 end
