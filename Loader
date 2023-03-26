@@ -1,4 +1,4 @@
 local PlaceId = game.PlaceId
-if PlaceId = 2888719930 then --BS2
+if PlaceId == 2888719930 then --BS2
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Auberon-Coding/MoonChicory/main/Games/2888719930.lua"))()
 end
